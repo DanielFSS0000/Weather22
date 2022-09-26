@@ -1,0 +1,106 @@
+.loader2 {
+    width:45px;
+    height:45px;
+    display:inline-block;
+    justify-content:center;
+    padding:0px;
+    border-radius:100%;
+    border:5px solid;
+    border-top-color:rgba(254, 168, 23, 0.65);
+    border-bottom-color:rgba(57, 154, 219, 0.65);
+    border-left-color:rgba(188, 84, 93, 0.95);
+    border-right-color:rgba(137, 188, 79, 0.95);
+    -webkit-animation: loader2 2s ease-in-out infinite alternate;
+    animation: loader2 2s ease-in-out infinite alternate;
+ }
+.loadgin-text{
+    display: flex;
+    align-items: center
+    
+}
+ @keyframes loader2 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(720deg);}
+ }
+ @-webkit-keyframes loader2 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(720deg);}
+ }
+.App{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-image:url('https://pixabay.com/get/g8bdf937f3ce027598ce3a163760e7571f6d5326e0af7e59bb7cc0ea60a913be53791c01abd054dae0e83dd95dc403883e820bb14749fc968462ac1c0955818d8123a38f2112685cc439b44c82bb58b98_1920.jpg');
+}
+
+/* Estilos para la card*/
+.card{
+    width:100%;
+    max-width: 400px;
+    background-color:rgba(139, 159, 183, 0.945);
+    border-radius:20px;
+    padding:20px;
+    box-shadow: 0 0 10px rgb(160, 214, 243);
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card-title{
+    grid-column: span 2;
+    text-align:center;
+    font-size:35px;
+    margin-bottom:8px;
+}
+.card-subtitle{
+    grid-column: span 2;
+    text-align:center;
+    font-size:15px;
+
+}
+.card-second-section{
+    display:flex;
+    flex-direction:column;
+    justify-content:center; 
+    gap:20px;
+}
+.second-list{
+    display:grid;
+    gap:8px;
+    
+}
+.second-title{
+    font-size:20px;
+}
+.second-span{
+    color:aquamarine;
+    font-size: 18px;
+}
+.second-item{
+    color:#fff;
+}
+.card-temperature{
+    grid-column: span 2;
+    text-align:center;
+    margin-bottom:15px;
+}
+.card-btn{
+    grid-column: span 2;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+    background-color:lightblue;
+    border:none;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px #0009;
+    font-size:15px;
+    font-weight:700;
+    cursor: pointer;
+}
+.card-btn:hover{
+    transform:scale(1.05);
+    filter:brightness(1.1);
+    transition:transform 100ms ease;
+}
